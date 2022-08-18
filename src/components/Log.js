@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from "react-router-dom";
 
-export default function Login() {
+export default function Log(props) {
   return (
     <div>
       <div className="flex flex-wrap justify-center mt-40 sm:mt-20">
@@ -22,7 +23,7 @@ export default function Login() {
               </label>
               <input
                 className="shadow appearance-none border-rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                type="text"
+                type="password"
                 placeholder="password"
               />
             </div>
@@ -37,7 +38,9 @@ export default function Login() {
             <div className="inline-block align-baseline mt-6">
               <div className="inline-block align-baseline font-bold text-sm text-gray-700 hover:text-blue-600  pr-4">First time here?</div>
               <button className="text-blue-400 hover:text-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                Sign up
+                <Link className="Link" to="/signup" smooth={true} duration={500}>
+                  Signup
+                </Link>
               </button>
             </div>
           </form>

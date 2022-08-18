@@ -9,10 +9,7 @@ li {
   @apply p-4
 }
 
-button {
-  @apply bg-blue-500 text-white font-bold rounded 
-  hover:bg-blue-700
-}
+
 
 /* body {
   margin: 0;

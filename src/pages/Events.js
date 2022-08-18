@@ -1,9 +1,10 @@
 import React from 'react'
+import Show from '../components/Show'
 
 export default function Events() {
   return (
-    <div name-='event'>
-        
-    </div>
+    <>
+      <Show /> 
+    </>
   )
 }

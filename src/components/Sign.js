@@ -1,6 +1,7 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-export default function Signup() {
+export default function Sign(props) {
   return (
     <div>
       <div className="flex flex-wrap justify-center mt-40">
@@ -37,7 +38,9 @@ export default function Signup() {
             <div className="inline-block align-baseline mt-6">
               <div className="inline-block align-baseline font-bold text-sm text-gray-700 hover:text-blue-600  pr-4">Already have an account?</div>
               <button className="text-blue-400 hover:text-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline">
-                Log in
+                <Link className="Link" to="/login" smooth={true} duration={500}>
+                  Log in
+                </Link>
               </button>
             </div>
           </form>
